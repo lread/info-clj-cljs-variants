@@ -12,7 +12,7 @@ Clojure flavors I cover:
 * *Regular ClojureScript* is compiled by the JVM and the one most folks are familiar with.
 * *Self-hosted ClojureScript* (aka bootstrap ClojureScript) is ClojureScript compiled by ClojureScript.
 
-Regular old reader macros can be used to conditionally include code from `.cljc` source for JVM versions of Clojure and ClojureScript.
+As we all know, reader macros can be used to conditionally include code from `.cljc` source for JVM versions of Clojure and ClojureScript:
 
 [source,clojure]
 ----
@@ -20,7 +20,7 @@ Regular old reader macros can be used to conditionally include code from `.cljc`
    :cljs "Do this for ClojureScript")
 ----
 
-What if we want to target Regular vs Self-hosted variants of ClojureScript, how do we do that?
+What if we want to target regular vs self-hosted variants of ClojureScript, how do we do that?
 
 To demonstrate one method, this repo has a macro `demo-clj-variants\m1` that will return a different value based what flavor of Clojure it is run on.
 
