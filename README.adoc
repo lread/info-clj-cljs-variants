@@ -1,4 +1,4 @@
-= info-clj-variants
+= info-cljs-variants
 :toc:
 
 == Intro
